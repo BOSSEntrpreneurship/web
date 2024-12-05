@@ -7,14 +7,14 @@ interface ScaleInProps {
   threshold?: number;
 }
 
-export function ScaleIn({ children, delay = 0, threshold = 0.2 }: ScaleInProps) {
+export function ScaleIn({ children, delay = 0, threshold = 0 }: ScaleInProps) {
   const { ref, isInView } = useInView({ threshold });
 
   return (
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transform transition-all duration-400 ease-out
+      className={`transform transition-all duration-200 ease-out
       ${isInView 
         ? 'opacity-100 scale-100' 
         : 'opacity-0 scale-95'
