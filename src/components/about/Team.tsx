@@ -48,7 +48,7 @@ export function Team() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <ScaleIn key={member.name} delay={index * 75} threshold={0.1}>
+            <ScaleIn key={member.name} delay={index * 25} threshold={0}>
               <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">
