@@ -26,7 +26,7 @@ export function Hero({ setCurrentPage }: HeroProps) {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_zVDy2FFV1xPlAUY3Pv1te6KzhTDREh8-w&s"
           alt="Famous Image"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/80 dark:from-gray-900/80 dark:to-gray-900/95" />
       </div>
