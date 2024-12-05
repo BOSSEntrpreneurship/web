@@ -24,8 +24,8 @@ export function Hero({ setCurrentPage }: HeroProps) {
     <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 py-12 sm:py-20">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80"
-          alt="Students collaborating"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_zVDy2FFV1xPlAUY3Pv1te6KzhTDREh8-w&s"
+          alt="Famous Image"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/80 dark:from-gray-900/80 dark:to-gray-900/95" />
