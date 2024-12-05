@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScaleIn } from '../animations/ScaleIn';
 
 const teamMembers = [
   {
@@ -14,7 +15,7 @@ const teamMembers = [
   {
     name: 'Enoch Tang',
     role: 'Co-Vice President',
-    bio: 'Enoch is an independent, courageous, and loyal individual who enjoys adventure and activities.',
+    bio: 'Enoch is an independent, courageous, and loyal individual who enjoys adventure and activities',
   },
   {
     name: 'Morris Hokan Yung',
@@ -47,20 +48,19 @@ export function Team() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">
-                  {member.name}
-                </h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-3">
-                  {member.role}
-                </p>
-                <p className="text-gray-600 dark:text-gray-300">{member.bio}</p>
+            <ScaleIn key={member.name} delay={index * 100} threshold={0.2}>
+              <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-3">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">{member.bio}</p>
+                </div>
               </div>
-            </div>
+            </ScaleIn>
           ))}
         </div>
       </div>
