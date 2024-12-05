@@ -9,7 +9,7 @@ export const events: Event[] = [
     time: "Period 3 - Period 4",
     location: "School Atrium",
     description: "An excellent bake sale that featured the Entrepreneurship Club selling Shin Ramen to the students of Bur Oak. All proceeds from this bake sale went towards future entrepreneurship events.",
-    image: "/src/data/1000003557.png",
+    image: "/web/src/data/1000003557.png",
     category: "Bake Sales",
     status: "past"
   },
