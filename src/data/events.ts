@@ -5,7 +5,7 @@ export const events: Event[] = [
     //Categories are Bake Sales, Competitions, and Workshops
     //Status is either past of future
     title: "Ramen Bake Sale",
-    date: "November 29, 2023",
+    date: "November 29, 2024",
     time: "Period 3 - Period 4",
     location: "School Atrium",
     description: "An excellent bake sale that featured the Entrepreneurship Club selling Shin Ramen to the students of Bur Oak. All proceeds from this bake sale went towards future entrepreneurship events.",
@@ -13,6 +13,18 @@ export const events: Event[] = [
     category: "Bake Sales",
     status: "past"
   },
+  {
+    //Categories are Bake Sales, Competitions, and Workshops
+    //Status is either past of future
+    title: "Cupcakes",
+    date: "October 31, 2024",
+    time: "Period 3 - Period 4",
+    location: "School Atrium",
+    description: "2024's Halloween day got a little sweeter when the Entrepreneurship Club sold festive cupcakes to the students of Bur Oak. All proceeds from this bake sale went towards future entrepreneurship events.",
+    image: "https://cdn-fastly.foodtalkdaily.com/media/2020/12/21/6375957/christmas-cupcakes.jpg?size=720x845&nocrop=1",
+    category: "Bake Sales",
+    status: "past"
+  }
   //Add comma for new event
   //No need for new comma if last event
 ];
