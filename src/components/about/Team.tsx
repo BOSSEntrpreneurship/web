@@ -9,12 +9,12 @@ const teamMembers = [
   {
     name: 'Darren Nadarajah',
     role: 'Co-Vice President',
-    bio: 'xxx',
+    bio: 'Darren is an innovative leader that loves action. He loves working with others and is open to new ideas and concepts.',
   },
   {
     name: 'Enoch Tang',
     role: 'Co-Vice President',
-    bio: 'Enoch is an independent, courageous, and loyal individual who enjoys adventure and activities',
+    bio: 'Enoch is an independent, courageous, and loyal individual who enjoys adventure and activities.',
   },
   {
     name: 'Morris Hokan Yung',
