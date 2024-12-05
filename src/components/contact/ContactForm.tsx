@@ -40,6 +40,9 @@ export function ContactForm() {
   return (
     <section className="py-12 sm:py-16 px-4 contact-form">
       <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+          Contact Us Directly
+        </h2>
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div>
