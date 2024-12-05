@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Mail } from 'lucide-react';
+import { MapPin, Clock, Instagram } from 'lucide-react';
 
 const contactInfo = [
   {
@@ -17,9 +17,9 @@ const contactInfo = [
     details: ['Every Wednesday', '2:55 PM - 4:30 PM', 'Room 1035'],
   },
   {
-    icon: Mail,
-    title: 'Email',
-    details: ['buroakentrepreneurship@gmail.com'],
+    icon: Instagram,
+    title: 'Instagram',
+    details: ['boss.entrepreneurship'],
   },
 ];
 
