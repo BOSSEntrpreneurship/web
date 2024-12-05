@@ -36,11 +36,13 @@ export function Navbar({
                 onClick={() => setCurrentPage('home')}
                 className="flex items-center gap-4 hover:opacity-80 transition-opacity"
               >
+                {/*
                 <img
                   src="/navbarlogo.png"
                   alt="BOSS Entrepreneurship Club Logo"
                   className="h-12 w-12 rounded-full"
                 />
+                */}
                 <span className="font-semibold text-gray-900 dark:text-white hidden sm:block">
                   BOSS Entrepreneurship
                 </span>
