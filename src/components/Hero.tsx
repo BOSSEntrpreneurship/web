@@ -12,7 +12,7 @@ export function Hero() {
     <section className="relative h-screen flex items-center justify-center">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_zVDy2FFV1xPlAUY3Pv1te6KzhTDREh8-w&s"
           alt="Students collaborating"
           className="w-full h-full object-cover opacity-30"
         />
