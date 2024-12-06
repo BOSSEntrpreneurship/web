@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
@@ -11,6 +11,14 @@ import { useDarkMode } from './hooks/useDarkMode';
 function App() {
   const [darkMode, setDarkMode] = useDarkMode();
   const [currentPage, setCurrentPage] = useState('home');
+
+  // Make setCurrentPage available globally for the Hero component
+  useEffect(() => {
+    (window as any).__setCurrentPage = setCurrentPage;
+    return () => {
+      delete (window as any).__setCurrentPage;
+    };
+  }, []);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -27,7 +35,7 @@ function App() {
       <main className="flex-grow">
         {currentPage === 'home' ? (
           <>
-            <Hero setCurrentPage={setCurrentPage} />
+            <Hero />
             <Features />
           </>
         ) : currentPage === 'about' ? (
