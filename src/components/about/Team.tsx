@@ -41,23 +41,25 @@ const teamMembers = [
 
 export function Team() {
   return (
-    <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-12 lg:mb-16 text-gray-900 dark:text-white">
           Meet Our Team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {teamMembers.map((member, index) => (
-            <ScaleIn key={member.name} delay={index * 25} threshold={0}>
-              <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1 text-gray-900 dark:text-white">
+            <ScaleIn key={member.name} delay={index * 50} threshold={0}>
+              <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-1 text-gray-900 dark:text-white">
                     {member.name}
                   </h3>
-                  <p className="text-blue-600 dark:text-blue-400 mb-3">
+                  <p className="text-blue-600 dark:text-blue-400 mb-3 text-sm sm:text-base">
                     {member.role}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-300">{member.bio}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
+                    {member.bio}
+                  </p>
                 </div>
               </div>
             </ScaleIn>
