@@ -1,11 +1,22 @@
 import { Lightbulb, TrendingUp, Users } from 'lucide-react';
 import { FadeIn } from './animations/FadeIn';
+import { scrollToElement } from '../utils/scroll';
 
 export function Hero() {
   const scrollToFeatures = () => {
     const featuresSection = document.getElementById('features');
     if (featuresSection) {
       featuresSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleJoinNow = () => {
+    // First navigate to contact page by updating currentPage
+    const setCurrentPage = (window as any).__setCurrentPage;
+    if (setCurrentPage) {
+      setCurrentPage('contact');
+      // Wait for page transition, then scroll to form
+      setTimeout(() => scrollToElement('contact-form'), 100);
     }
   };
 
@@ -36,7 +47,10 @@ export function Hero() {
 
         <FadeIn delay={400}>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition">
+            <button 
+              onClick={handleJoinNow}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition"
+            >
               Join Now
             </button>
             <button
