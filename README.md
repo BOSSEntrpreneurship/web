@@ -1,3 +1,3 @@
 # web
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/BOSSEntrpreneurship/web)
+https://bossentrepreneurship.netlify.app/
