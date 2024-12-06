@@ -7,10 +7,14 @@ import { Events } from './pages/Events';
 import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
 import { useDarkMode } from './hooks/useDarkMode';
+import { usePageNavigation } from './hooks/usePageNavigation';
 
 function App() {
   const [darkMode, setDarkMode] = useDarkMode();
   const [currentPage, setCurrentPage] = useState('home');
+
+  // Handle page navigation and scrolling
+  usePageNavigation(currentPage);
 
   // Make setCurrentPage available globally for the Hero component
   useEffect(() => {
