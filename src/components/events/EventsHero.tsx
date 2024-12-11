@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar } from 'lucide-react';
+
 export function EventsHero() {
   return (
     <div className="relative py-20 px-4 bg-gradient-to-br from-purple-600 to-blue-600">
@@ -11,7 +12,7 @@ export function EventsHero() {
           Upcoming and Past Events
         </h1>
         <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-          Join us for upcoming workshops, bake sales, and competitions and look back on succesful past events.
+          Join us for upcoming workshops, bake sales, and competitions and look back on successful past events.
         </p>
       </div>
     </div>
