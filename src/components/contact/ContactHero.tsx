@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+
 export function ContactHero() {
   return (
     <div className="relative py-20 px-4 bg-gradient-to-br from-green-600 to-blue-600">
