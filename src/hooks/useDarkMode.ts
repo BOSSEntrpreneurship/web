@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { updateStatusBarColor } from './useStatusBarColor';
 
 export function useDarkMode() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -15,15 +16,11 @@ export function useDarkMode() {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
     if (darkMode) {
       document.documentElement.classList.add('dark');
-      // Update status bar colors for dark mode
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#111827');
-      document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')?.setAttribute('content', 'black-translucent');
     } else {
       document.documentElement.classList.remove('dark');
-      // Update status bar colors for light mode
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
-      document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')?.setAttribute('content', 'default');
     }
+    // Update status bar color based on current theme
+    updateStatusBarColor(darkMode);
   }, [darkMode]);
 
   // Listen for system theme changes
