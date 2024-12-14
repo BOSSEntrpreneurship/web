@@ -15,8 +15,12 @@ export function useDarkMode() {
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      // Update status bar color for dark mode
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#111827');
     } else {
       document.documentElement.classList.remove('dark');
+      // Update status bar color for light mode
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
     }
   }, [darkMode]);
 
