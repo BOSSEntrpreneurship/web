@@ -3,6 +3,7 @@ import { Event } from '../types/event';
 export const events: Event[] = [
   //Categories are Bake Sales, Competitions, and Workshops
   //Status is either past of future
+  //Register now button only for workshops and Competitions
    {
     title: "Candy Cups",
     date: "December 18, 2024",
