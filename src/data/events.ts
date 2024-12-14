@@ -3,6 +3,16 @@ import { Event } from '../types/event';
 export const events: Event[] = [
   //Categories are Bake Sales, Competitions, and Workshops
   //Status is either past of future
+   {
+    title: "Candy Cups",
+    date: "December 18, 2024",
+    time: "Period 3 - Period 4",
+    location: "School Atrium",
+    description: "Purchase a sweet variety of treats this holiday season to eat or give to your friends! Profit made will be going to charity.",
+    image: "https://karameller.com/cdn/shop/files/FullSizeRender_38845071-1e12-4fc9-a78b-0a6d7020b666.jpg?v=1698354701",
+    category: "Bake Sales",
+    status: "future"
+  },
   {
     title: "Ramen Bake Sale",
     date: "November 29, 2024",
