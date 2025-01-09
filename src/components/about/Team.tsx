@@ -20,7 +20,7 @@ const teamMembers = [
   {
     name: 'Morris Hokan Yung',
     role: 'Head of Departments',
-    bio: 'Mark.',
+    bio: 'Morris is a motivated, resilient, and reliable person who you can always depend on.',
   },
   {
     name: 'Isabella Victorino',
